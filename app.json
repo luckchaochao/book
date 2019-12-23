@@ -1,0 +1,61 @@
+{
+  "pages": [
+    
+
+
+
+
+
+    "pages/index/index",
+    "pages/explore/explore",
+    "pages/bookrack/bookrack",
+    "pages/home/home",
+    "Component/slideLR/slideLR",
+
+
+    "pages/logs/logs"
+
+
+
+
+
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#21272E",
+    "navigationBarTitleText": "Book",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#2A313A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+
+        "iconPath": "icon/icon_tabBar/index.png",
+        "selectedIconPath": "icon/icon_tabBar/indexDoing.png"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+
+        "iconPath": "icon/icon_tabBar/explore.png",
+        "selectedIconPath": "icon/icon_tabBar/exploreDoing.png"
+      },
+      {
+        "pagePath": "pages/bookrack/bookrack",
+
+        "iconPath": "icon/icon_tabBar/bookrack.png",
+        "selectedIconPath": "icon/icon_tabBar/bookrackDoing.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+
+        "iconPath": "icon/icon_tabBar/my.png",
+        "selectedIconPath": "icon/icon_tabBar/myDoing.png"
+      }
+    ]
+  }
+}

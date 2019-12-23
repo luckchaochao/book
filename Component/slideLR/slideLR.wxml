@@ -1,0 +1,24 @@
+<!-- Component/slideLR/slideLR.wxml -->
+<view class="slideLR" hover-class="none" hover-stop-propagation="false">
+  <text class="slideLRName" bindtap="qqq">分类排行</text>
+  <navigator class="slideLRmenu" url="/pages/logs/logs?title=navigate" hover-class="navigator-hover">
+    查看更多 >
+  </navigator>
+
+    <view class="slideLRLoopBox clr">
+    <view class="slideLRLoop" wx:for="{{items}}" wx:key="index">
+      <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
+      <text class="slideLRLoopText">{{item.type}}</text>
+    </view>
+  </view>
+
+  <!-- <swiper class="slideLRLoopBox clr"  interval="true" duration="true">
+    <block wx:for="{{items}}" wx:key="index">
+      <swiper-item class="slideLRLoop">
+        <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
+        <text class="slideLRLoopText">{{item.type}}</text>
+      </swiper-item>
+    </block>
+  </swiper> -->
+</view>
+

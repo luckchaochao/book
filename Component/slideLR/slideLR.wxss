@@ -1,0 +1,33 @@
+.slideLR {
+  padding: 0 50rpx;
+  color: #fff;
+}
+.slideLR .slideLRName {
+  font-size: 36rpx;
+}
+.slideLR .slideLRmenu {
+  float: right;
+  font-size: 26rpx;
+  margin-top: 6rpx;
+  color: #8F95A6;
+}
+.slideLR .slideLRLoopBox {
+  margin-top: 50rpx !important;
+  width: 1520rpx !important;
+  height: 210rpx !important;
+  border-bottom: 1rpx solid #2F343C !important;
+  padding-bottom: 50rpx !important;
+}
+.slideLR .slideLRLoopBox .slideLRLoop {
+  width: 150rpx !important;
+  float: left !important;
+  padding-right: 40rpx !important;
+}
+.slideLR .slideLRLoopBox .slideLRLoop .slideLRLoopImg {
+  width: 150rpx !important;
+  height: 150rpx !important;
+  margin-bottom: 10rpx !important;
+}
+.slideLR .slideLRLoopBox .slideLRLoop .slideLRLoopText {
+  font-size: 26rpx !important;
+}

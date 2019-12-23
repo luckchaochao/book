@@ -1,0 +1,30 @@
+.pageBox {
+  padding: 0 50rpx;
+}
+.headMenu {
+  color: #fff;
+}
+.headMenu .jiangbei {
+  float: left;
+}
+.headMenu .menu {
+  float: right;
+}
+.seekBox {
+  margin-top: 46rpx;
+  position: relative;
+}
+.seekBox .seekData {
+  background-color: #2D353D;
+  border: none;
+  border-radius: 50rpx;
+  height: 90rpx;
+  padding-left: 80rpx;
+  color: #fff;
+}
+.seekBox .seekIcon {
+  color: #9CA2B3;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
