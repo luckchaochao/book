@@ -2,15 +2,15 @@
   "pages": [
     
 
+		"pages/index/index",
+		
 
+		"Component/slideLR/slideLR",
+		
 
-
-
-    "pages/index/index",
     "pages/explore/explore",
     "pages/bookrack/bookrack",
     "pages/home/home",
-    "Component/slideLR/slideLR",
 
 
     "pages/logs/logs"

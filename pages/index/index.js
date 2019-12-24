@@ -1,38 +1,23 @@
 // pages/index/index.js
 let app = new getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    items: []
+		classify: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // let tmpThis = this
-    // wx.request({
-    //   url: 'https://wujunhui.xyz/getfenleilist',
-    //   method: "get",
-    //   data: {
-
-    //   },
-    //   success: function (res) {
-    //     tmpThis.setData({
-    //       items: res.data
-    //     })
-    //     // console.log(tmpThis.data.items)
-    //   }
-    // })
-    console.log(1)
-    console.log(app.globalData.classify)
+		// 将全局数classify据拿到
     this.setData({
-      items: app.globalData.classify
+			classify: app.globalData.classify
     })
-    console.log(this.data.items)
   },
 
   /**

@@ -1,7 +1,7 @@
 //app.js
 
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -34,33 +34,23 @@ App({
       }
     })
 
+
+
     let tmpThis = this
+    wx.request({
+      url: 'https://wujunhui.xyz/getfenleilist',
+      method: "get",
+      data: {},
+      success: function(res) {
+        tmpThis.globalData.classify = res.data
 
-    let p = new Promise(function (resolve, reject) {
-      console.log(111)
-
-      wx.request({
-        url: 'https://wujunhui.xyz/getfenleilist',
-        method: "get",
-        data: {
-
-        },
-        success: function (res) {
-
-          // console.log(res.data)
-          // console.log(tmpThis.globalData.classify)
-          tmpThis.globalData.classify = res.data
-
-        }
-      })
-
-
+      }
     });
 
 
 
 
-    
+
 
 
 

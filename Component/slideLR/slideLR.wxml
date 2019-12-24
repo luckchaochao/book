@@ -1,3 +1,5 @@
+<!--Component/slideLR/slideLR.wxml-->
+<!-- <text>Component/slideLR/slideLR.wxml</text> -->
 <!-- Component/slideLR/slideLR.wxml -->
 <view class="slideLR" hover-class="none" hover-stop-propagation="false">
   <text class="slideLRName" bindtap="qqq">分类排行</text>
@@ -5,20 +7,20 @@
     查看更多 >
   </navigator>
 
-    <view class="slideLRLoopBox clr">
-    <view class="slideLRLoop" wx:for="{{items}}" wx:key="index">
+    <!-- <view class="slideLRLoopBox clr">
+    <view class="slideLRLoop" wx:for="{{slideLRdata}}" wx:key="index">
       <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
       <text class="slideLRLoopText">{{item.type}}</text>
     </view>
-  </view>
+  </view> -->
 
-  <!-- <swiper class="slideLRLoopBox clr"  interval="true" duration="true">
-    <block wx:for="{{items}}" wx:key="index">
+  <swiper class="slideLRLoopBox clr"  interval="true" duration="true">
+    <block wx:for="{{slideLRdata}}" wx:key="index">
       <swiper-item class="slideLRLoop">
         <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
         <text class="slideLRLoopText">{{item.type}}</text>
       </swiper-item>
     </block>
-  </swiper> -->
+  </swiper>
 </view>
 

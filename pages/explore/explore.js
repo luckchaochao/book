@@ -1,4 +1,5 @@
 // pages/explore/explore.js
+let app = getApp()
 Page({
 
   /**

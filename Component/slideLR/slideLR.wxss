@@ -1,3 +1,4 @@
+/* Component/slideLR/slideLR.wxss */
 .slideLR {
   padding: 0 50rpx;
   color: #fff;
