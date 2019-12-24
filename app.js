@@ -85,24 +85,5 @@ App({
 
 
 
-	// wx.request({
-	// 	url: 'https://wujunhui.xyz/getwriters',
-	// 	method: "get",
-	// 	data: {},
-	// 	success: function (res) {
-	// 		tmpThis.globalData.author = res.data
-	// 	}
-	// });
-
-	// wx.request({
-	// 	url: 'https://wujunhui.xyz/getbooks',
-	// 	method: "get",
-	// 	data: {},
-	// 	success: function (res) {
-	// 		tmpThis.globalData.bookList = res.data
-	// 	}
-	// });
-
-
 
 })

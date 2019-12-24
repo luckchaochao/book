@@ -10,3 +10,9 @@
 page{
   background-color: #21272E;
 }
+/* 改变滚动条默认样式 */
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}

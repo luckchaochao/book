@@ -1,17 +1,34 @@
 // pages/bookrack/bookrack.js
+let app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    bookListNav: {
+      title: "未读",
+      navName: "查看全部 >",
+      navUrl: "/pages/logs/logs?title=navigate"
+    },
+    bookListDoingNav: {
+      title: "正在阅读",
+      navName: "查看全部 >",
+      navUrl: "/pages/logs/logs?title=navigate"
+    },
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // let tmpThis = this
+    this.setData({
+      bookListDoing: app.globalData.bookList.slice(0,3),
+      bookList: app.globalData.bookList.slice(0,6)
+    })
+    // console.log(app.globalData.bookList)
 
   },
 
