@@ -1,7 +1,7 @@
-/* Component/slideLR/slideLR.wxss */
 .slideLR {
-  padding: 0 50rpx;
+  padding: 30rpx 50rpx 0 50rpx;
   color: #fff;
+  overflow: auto;
 }
 .slideLR .slideLRName {
   font-size: 36rpx;
@@ -13,22 +13,27 @@
   color: #8F95A6;
 }
 .slideLR .slideLRLoopBox {
-  margin-top: 50rpx !important;
-  width: 1520rpx !important;
-  height: 210rpx !important;
-  border-bottom: 1rpx solid #2F343C !important;
-  padding-bottom: 50rpx !important;
+  margin-top: 50rpx;
+  height: 210rpx;
+  border-bottom: 1rpx solid #2F343C;
+  padding-bottom: 50rpx;
+  white-space: nowrap;
 }
-.slideLR .slideLRLoopBox .slideLRLoop {
-  width: 150rpx !important;
-  float: left !important;
-  padding-right: 40rpx !important;
+.slideLR .slideLRLoopBox .slideLRLoopWrap {
+  display: inline-block;
 }
-.slideLR .slideLRLoopBox .slideLRLoop .slideLRLoopImg {
-  width: 150rpx !important;
-  height: 150rpx !important;
-  margin-bottom: 10rpx !important;
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop {
+  width: 150rpx;
+  float: left;
+  padding-right: 40rpx;
 }
-.slideLR .slideLRLoopBox .slideLRLoop .slideLRLoopText {
-  font-size: 26rpx !important;
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop .slideLRLoopImg {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: 10rpx;
+}
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop .slideLRLoopText {
+  float: left;
+  font-size: 26rpx;
 }

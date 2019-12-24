@@ -1,0 +1,71 @@
+.bookLine {
+  margin: 0 50rpx;
+  padding-top: 60rpx;
+  color: #fff;
+}
+.bookLine .bookLineName {
+  font-size: 36rpx;
+}
+.bookLine .bookLinemenu {
+  float: right;
+  font-size: 26rpx;
+  margin-top: 6rpx;
+  color: #8F95A6;
+}
+.bookLine .bookScroll {
+  white-space: nowrap;
+}
+.bookLine .bookScroll .bookLineWrap {
+  width: 600rpx;
+  height: 290rpx;
+  margin: 100rpx 30rpx 100rpx 0;
+  display: inline-block;
+}
+.bookLine .bookScroll .bookLineWrap .bookLineBox {
+  background-color: #2B323B;
+  width: 340rpx;
+  height: 230rpx;
+  margin-top: 40rpx;
+  border-radius: 20rpx;
+  position: relative;
+  padding: 20rpx 30rpx 0 230rpx;
+}
+.bookLine .bookScroll .bookLineWrap .bookLineBox .bookLineBookMenu {
+  width: 50rpx;
+  height: 50rpx;
+  color: #969BAF;
+  text-align: center;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  top: 14rpx;
+  right: 14rpx;
+}
+.bookLine .bookScroll .bookLineWrap .bookLineBox .bookLineImg {
+  width: 170rpx;
+  height: 256rpx;
+  position: absolute;
+  left: 34rpx;
+  top: -34rpx;
+}
+.bookLine .bookScroll .bookLineWrap .bookLineBox .bookLineBookName {
+  display: block;
+  font-size: 40rpx;
+  font-family: 黑体;
+}
+.bookLine .bookScroll .bookLineWrap .bookLineBox .bookLineBookAuthor {
+  display: block;
+  font-size: 24rpx;
+  color: #5D637C;
+  border-bottom: 1rpx solid #363D47;
+  padding: 10rpx 0 20rpx 0;
+}
+.bookLine .bookScroll .bookLineWrap .bookLineBox .bookLineBookAbout {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  color: #868DAB;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

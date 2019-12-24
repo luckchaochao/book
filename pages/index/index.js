@@ -7,7 +7,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-		classify: []
+    classifyNav:{
+      title:"分类排行",
+      navName:"查看全部 >",
+      navUrl:"/pages/logs/logs?title=navigate"
+    },
+    authorNav:{
+      title:"作者排行",
+      navName:"查看全部 >",
+      navUrl:"/pages/logs/logs?title=navigate"
+    },
+    bookListNav:{
+      title:"新发布",
+      navName:"查看全部 >",
+      navUrl:"/pages/logs/logs?title=navigate"
+    },
+    bookLineNav:{
+      title:"热销榜",
+      navName:"查看全部 >",
+      navUrl:"/pages/logs/logs?title=navigate"
+    }
   },
 
   /**
@@ -16,8 +35,14 @@ Page({
   onLoad: function (options) {
 		// 将全局数classify据拿到
     this.setData({
-			classify: app.globalData.classify
+      classify: app.globalData.classify,
+      author: app.globalData.author,
+      bookList: app.globalData.bookList.slice(0,6),
+      hotSeek:app.globalData.hotSeek
     })
+    console.log(this.data.bookList)
+    // console.log(this.data.author)
+
   },
 
   /**
@@ -31,7 +56,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

@@ -1,0 +1,41 @@
+.bookList {
+  margin: 0 50rpx;
+  padding-top: 60rpx;
+  color: #fff;
+  border-bottom: 1rpx solid #2F343C;
+}
+.bookList .bookListName {
+  font-size: 36rpx;
+}
+.bookList .bookListmenu {
+  float: right;
+  font-size: 26rpx;
+  margin-top: 6rpx;
+  color: #8F95A6;
+}
+.bookList .bookListBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 60rpx;
+}
+.bookList .bookListBox .bookBox {
+  width: 200rpx;
+}
+.bookList .bookListBox .bookBox .bookBoxImg {
+  float: left;
+  width: 200rpx;
+  height: 300rpx;
+}
+.bookList .bookListBox .bookBox .bookBoxName {
+  float: left;
+  font-size: 28rpx;
+  line-height: 30rpx;
+}
+.bookList .bookListBox .bookBox .bookBoxAuthorName {
+  float: left;
+  font-size: 24rpx;
+  line-height: 18rpx;
+  margin-bottom: 80rpx;
+  color: #5D637C;
+}

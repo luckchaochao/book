@@ -1,15 +1,28 @@
 <!-- pages/index/index.wxml -->
-<!-- <import src='../../Component/slideLR/slideLR.wxml' /> -->
 <view class="pageBox" hover-class="none" hover-stop-propagation="false">
     <view class="headMenu clr" hover-class="none" hover-stop-propagation="false">
-    <navigator class="jiangbei iconfont icon-jiangbei" url="/pages/logs/logs?title=navigate" hover-class="navigator-hover"></navigator>
-    <navigator class="menu iconfont icon-menu" url="/pages/logs/logs?title=navigate" hover-class="navigator-hover"></navigator>
+        <navigator class="jiangbei iconfont icon-jiangbei" url="/pages/logs/logs?title=navigate" hover-class="navigator-hover"></navigator>
+        <navigator class="menu iconfont icon-menu" url="/pages/logs/logs?title=navigate" hover-class="navigator-hover"></navigator>
+    </view>
+    <view class="seekBox">
+        <input class="seekData" type="text" />
+        <text class="iconfont icon-49 seekIcon" selectable="false" space="false" decode="false"></text>
+    </view>
+</view>
+<slideLR slideLRdata="{{classify}}" slideLRNav="{{classifyNav}}"></slideLR>
+<slideLR slideLRdata="{{author}}" slideLRNav="{{authorNav}}"></slideLR>
+<bookList bookList="{{bookList}}" bookListNav="{{bookListNav}}"></bookList>
+
+
+<view class="hotSeekBox" hover-class="none" hover-stop-propagation="false">
+    <text class="hotSeekTitle">热门搜索</text>
+    <block wx:for="{{hotSeek}}" wx:key="index">
+        <navigator style="display:inline" url="/pages/logs/logs?title=navigate">
+            <view class="hotSeek" style="color:{{item.color}};border:1rpx solid {{item.color}}" selectable="false" space="false" decode="false">
+                {{item.title}}
+            </view>
+        </navigator>
+    </block>
 </view>
 
-<view class="seekBox">
-    <input class="seekData" type="text" />
-    <text class="iconfont icon-49 seekIcon" selectable="false" space="false" decode="false"></text>
-</view>
-</view>
-
-<slideLR slideLRdata="{{classify}}"></slideLR>
+<bookLine class="" bookLine="{{bookList}}" bookLineNav="{{bookLineNav}}"></bookLine>

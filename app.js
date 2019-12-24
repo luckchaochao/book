@@ -1,7 +1,7 @@
 //app.js
 
 App({
-  onLaunch: function() {
+  onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -41,11 +41,39 @@ App({
       url: 'https://wujunhui.xyz/getfenleilist',
       method: "get",
       data: {},
-      success: function(res) {
+      success: function (res) {
         tmpThis.globalData.classify = res.data
-
       }
     });
+
+
+    wx.request({
+      url: 'https://wujunhui.xyz/getwriters',
+      method: "get",
+      data: {},
+      success: function (res) {
+        tmpThis.globalData.author = res.data
+      }
+    });
+
+    wx.request({
+      url: 'https://wujunhui.xyz/getbooks',
+      method: "get",
+      data: {},
+      success: function (res) {
+        tmpThis.globalData.bookList = res.data
+      }
+    });
+
+    // wx.request({
+    //   url: 'https://wujunhui.xyz/gethostser',
+    //   method: "get",
+    //   data: {},
+    //   success: function (res) {
+    //     tmpThis.globalData.hotSeek = res.data
+    //   }
+    // });
+
 
 
 
@@ -56,9 +84,24 @@ App({
 
   },
   globalData: {
+    hotSeek: [{
+      title: "2018排行榜",
+      color: "#E24A7B"
+    }, {
+      title: "职场热门",
+      color: "#59B080"
+    }, {
+      title: "都市言情",
+      color: "#EC575E"
+    }, {
+      title: "哈弗大学经济管理类",
+      color: "#8F5FE6"
+    }, {
+      title: "领导才能",
+      color: "#DED658"
+    }, ],
     userInfo: null,
-    classify: {}
-
-
+    classify: {},
+    author: {}
   }
 })

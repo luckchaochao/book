@@ -2,8 +2,12 @@
   "pages": [
     
 
+
+
+
 		"pages/index/index",
 		
+		"Component/bookList/bookList",
 
 		"Component/slideLR/slideLR",
 		
@@ -16,10 +20,6 @@
     "pages/logs/logs"
 
 
-
-
-
-    
   ],
   "window": {
     "backgroundTextStyle": "light",

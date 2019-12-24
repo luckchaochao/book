@@ -1,0 +1,23 @@
+<!-- Component/bookList/bookList.wxml -->
+<!-- <text class="" selectable="false" space="false" decode="false">666{{bookListNav.title}}</text> -->
+<view class="bookList clr" hover-class="none" hover-stop-propagation="false">
+    <text class="bookListName">{{bookListNav.title}}</text>
+    <navigator class="bookListmenu" url="{{bookListNav.navUrl}}" hover-class="navigator-hover">
+        {{bookListNav.navName}}
+    </navigator>
+    <view class="bookListBox">
+
+        <block wx:for="{{bookList}}" wx:key="index">
+            <navigator class="bookBox clr" url="{{bookListNav.navUrl}}">
+                <image class="bookBoxImg" src="{{item.touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                <text class="bookBoxName" selectable="false" space="false" decode="false">
+                    {{item.bookname}}
+                </text>
+                <text class="bookBoxAuthorName" selectable="false" space="false" decode="false">
+                    {{item.writername}}
+                </text>
+            </navigator>
+        </block>
+
+    </view>
+</view>

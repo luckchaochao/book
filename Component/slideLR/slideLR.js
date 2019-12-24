@@ -5,7 +5,8 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    slideLRdata: Array
+    slideLRdata: Array,
+    slideLRNav:Object
   },
 
   /**
@@ -21,6 +22,8 @@ Component({
       console.log("slideLR组件")
       console.log(app.globalData.classify)
       console.log(this.properties.slideLRdata)
+      console.log(this.properties.classifyNav)
+
       console.log("slideLR组件")
     }
   }
