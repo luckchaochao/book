@@ -3,5 +3,7 @@
 		"slideLR": "../../Component/slideLR/slideLR",
 		"bookList": "../../Component/bookList/bookList",
 		"bookLine": "../../Component/bookLine/bookLine"
-	}
+	},
+	"navigationBarTitleText":"首页"
+
 }

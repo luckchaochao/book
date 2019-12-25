@@ -16,3 +16,8 @@ width: 0;
 height: 0;
 color: transparent;
 }
+
+.borderLine{
+  margin: 0 50rpx;
+  border: 1rpx solid #2F343C;
+}

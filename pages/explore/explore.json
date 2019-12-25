@@ -1,5 +1,4 @@
 {
-	"usingComponents": {
-		"slideLR": "../../Component/slideLR/slideLR"
-	}
+	"usingComponents": {},
+	"navigationBarTitleText": "探索"
 }

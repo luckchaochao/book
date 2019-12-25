@@ -2,7 +2,6 @@
   margin: 0 50rpx;
   padding-top: 60rpx;
   color: #fff;
-  border-bottom: 1rpx solid #2F343C;
 }
 .bookList .bookListName {
   font-size: 36rpx;

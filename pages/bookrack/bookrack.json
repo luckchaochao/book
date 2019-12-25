@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
 		"bookList": "../../Component/bookList/bookList"
-	}
+	},
+	"navigationBarTitleText":"书架"
 }

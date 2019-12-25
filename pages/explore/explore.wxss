@@ -1,1 +1,77 @@
-/* pages/explore/explore.wxss */
+.navBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 50rpx 50rpx 50rpx;
+}
+.navBtn text {
+  color: #71768C;
+  font-size: 36rpx;
+}
+.navBtn .windowFourBtn {
+  margin-right: 20rpx;
+}
+.navBtn .colorFFF {
+  color: #fff;
+}
+.oneLoopBox {
+  text-align: center;
+  height: 1200rpx;
+}
+.oneLoopBox .oneLoop {
+  height: 900rpx;
+}
+.oneLoopBox .oneLoop .oneLoopImg {
+  width: 390rpx;
+  height: 580rpx;
+}
+.oneLoopBox .oneLoop .oneLoopBookNane {
+  display: block;
+  font-family: 黑体;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 30rpx;
+  font-size: 50rpx;
+}
+.oneLoopBox .oneLoop .oneLoopAuthorName {
+  display: block;
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  color: #656A7B;
+}
+.oneLoopBox .oneLoop .borderLine {
+  margin: 70rpx 180rpx 0 180rpx;
+}
+.oneLoopBox .oneLoop .oneLoopReaderImg {
+  margin-top: 40rpx;
+}
+.oneLoopBox .oneLoop .oneLoopReaderImg image {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 6rpx;
+}
+.oneLoopBox .oneLoop .oneLoopReaderNumber {
+  display: block;
+  font-size: 20rpx;
+  color: #A2A8BA;
+}
+.fourBox {
+  margin: 0 auto;
+  width: 570rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.fourBox .four {
+  width: 270rpx;
+  margin-bottom: 70rpx;
+}
+.fourBox .four .fourBookImg {
+  width: 270rpx;
+  height: 400rpx;
+}
+.fourBox .four .fourBookName {
+  color: #fff;
+  text-align: center;
+  margin-top: 14rpx;
+  font-size: 28rpx;
+}

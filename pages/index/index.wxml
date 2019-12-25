@@ -12,7 +12,7 @@
 <slideLR slideLRdata="{{classify}}" slideLRNav="{{classifyNav}}"></slideLR>
 <slideLR slideLRdata="{{author}}" slideLRNav="{{authorNav}}"></slideLR>
 <bookList bookList="{{bookList}}" bookListNav="{{bookListNav}}"></bookList>
-
+<view class="borderLine" ></view>
 
 <view class="hotSeekBox" hover-class="none" hover-stop-propagation="false">
     <text class="hotSeekTitle">热门搜索</text>

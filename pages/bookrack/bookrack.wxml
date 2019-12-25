@@ -1,6 +1,6 @@
 <!--pages/bookrack/bookrack.wxml-->
 <!-- <text>pages/bookrack/bookrack.wxml</text> -->
-<bookList bookList="{{bookListDoing}}" bookListNav="{{bookListDoingNav}}"></bookList>
-<bookList bookList="{{bookList}}" bookListNav="{{bookListNav}}"></bookList>
+<bookList class="doingRead" bookList="{{bookListDoing}}" bookListNav="{{bookListDoingNav}}"></bookList>
+<bookList class="notRead" bookList="{{bookList}}" bookListNav="{{bookListNav}}"></bookList>
 
 
