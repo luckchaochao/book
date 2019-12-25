@@ -1,34 +1,40 @@
 <!-- pages/explore/explore.wxml -->
-<!-- <text>pages/explore/explore.wxml</text> -->
 <view class="navBtn clr">
   <text class="iconfont icon-kuaijiecaidan windowFourBtn {{pageType==0?'colorFFF':''}}" bindtap="setPageType" data-value="0"></text>
   <text class="iconfont icon-yk_fangkuai_fill windowOneBtn {{pageType==0?'':'colorFFF'}}" bindtap="setPageType" data-value="1"></text>
 </view>
-
 <swiper class="oneLoopBox" vertical="true" wx:if="{{pageType==1}}">
   <block wx:for="{{bookList}}" wx:key="*this">
     <swiper-item class="oneLoop">
       <image class="oneLoopImg" src="{{item.touxiang}}"></image>
-      <text class="oneLoopBookNane" selectable="false" space="false" decode="false">
-                    {{item.bookname}}
-                </text>
-      <text class="oneLoopAuthorName" selectable="false" space="false" decode="false">
-                    {{item.writername}}
-                </text>
+      <view class="oneLoopBookNane" selectable="false" space="false" decode="false">
+        {{item.bookname}}
+      </view>
+      <view class="oneLoopAuthorName" selectable="false" space="false" decode="false">
+        {{item.writername}}
+      </view>
       <view class="borderLine" hover-class="none" hover-stop-propagation="false"></view>
+
       <view class="oneLoopReaderImg" hover-class="none" hover-stop-propagation="false">
         <block wx:for="{{author}}" wx:key="index">
           <image src="{{item.touxiang}}"></image>
+          <view class="recommend">
+            <image class="recommendImg" src="{{item.touxiang}}"></image>
+            <view class="recommendNameBox">
+              <view class="recommendName">{{item.name}}</view>
+              <view class="recommendInner">推荐</view>
+            </view>
+          </view>
         </block>
       </view>
+      
       <text class="oneLoopReaderNumber" selectable="false" space="false" decode="false">
-                    {{item.reading}}人已阅读
-                </text>
+        {{item.reading}}人已阅读
+      </text>
     </swiper-item>
   </block>
 </swiper>
-
-<scroll-view class="fourBox" scroll-y="true" enable-flex="true"  wx:if="{{pageType==0}}">
+<scroll-view class="fourBox" scroll-y="true" enable-flex="true" wx:if="{{pageType==0}}">
   <block wx:for="{{bookList}}">
     <view class="four">
       <image class="fourBookImg" src="{{item.touxiang}}"></image>

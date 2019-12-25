@@ -19,6 +19,7 @@
 }
 .oneLoopBox .oneLoop {
   height: 900rpx;
+  position: relative;
 }
 .oneLoopBox .oneLoop .oneLoopImg {
   width: 390rpx;
@@ -39,7 +40,7 @@
   color: #656A7B;
 }
 .oneLoopBox .oneLoop .borderLine {
-  margin: 70rpx 180rpx 0 180rpx;
+  margin: 40rpx 180rpx 0 180rpx;
 }
 .oneLoopBox .oneLoop .oneLoopReaderImg {
   margin-top: 40rpx;
@@ -53,6 +54,31 @@
   display: block;
   font-size: 20rpx;
   color: #A2A8BA;
+}
+.oneLoopBox .oneLoop .recommend {
+  position: absolute;
+  right: 0rpx;
+  top: 1000rpx;
+  width: 240rpx;
+  height: 80rpx;
+  border-radius: 100rpx 0 0 100rpx;
+  background-color: #15191D;
+  display: flex;
+  align-items: center;
+}
+.oneLoopBox .oneLoop .recommend .recommendImg {
+  margin-left: 8rpx;
+}
+.oneLoopBox .oneLoop .recommend .recommendNameBox {
+  text-align: left;
+}
+.oneLoopBox .oneLoop .recommend .recommendNameBox .recommendName {
+  color: #fff;
+  font-size: 24rpx;
+}
+.oneLoopBox .oneLoop .recommend .recommendNameBox .recommendInner {
+  color: #707483;
+  font-size: 20rpx;
 }
 .fourBox {
   margin: 0 auto;

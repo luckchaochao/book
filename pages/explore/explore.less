@@ -26,6 +26,7 @@
 
     .oneLoop {
         height: 900rpx;
+        position: relative;
         // background-color: #666;
 
 
@@ -41,6 +42,7 @@
             color: #fff;
             margin-top: 30rpx;
             font-size: 50rpx;
+            // background-color: #fff;
         }
 
         .oneLoopAuthorName {
@@ -51,7 +53,7 @@
         }
 
         .borderLine {
-            margin: 70rpx 180rpx 0 180rpx;
+            margin: 40rpx 180rpx 0 180rpx;
         }
 
         .oneLoopReaderImg {
@@ -70,6 +72,39 @@
             color: #A2A8BA;
 
         }
+
+        .recommend {
+            position: absolute;
+            right: 0rpx;
+            top: 1000rpx;
+            width: 240rpx;
+            height: 80rpx;
+            border-radius: 100rpx 0 0 100rpx;
+            background-color: #15191D;
+            display: flex;
+            align-items: center;
+
+            .recommendImg {
+                margin-left: 8rpx;
+            }
+
+            .recommendNameBox {
+                text-align: left;
+                .recommendName {
+                    color: #fff;
+                    font-size: 24rpx;
+                }
+
+                .recommendInner {
+                    color: #707483;
+                    font-size: 20rpx;
+
+                }
+
+            }
+
+        }
+
 
 
     }

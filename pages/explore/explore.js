@@ -18,7 +18,7 @@ Page({
       tmpThis.setData({
         bookList: app.globalData.bookList
       })
-      console.log(tmpThis.data.bookList)
+      // console.log(tmpThis.data.bookList)
     });
     app.getAuthor().then(res => {
       tmpThis.setData({
