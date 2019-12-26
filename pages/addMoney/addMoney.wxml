@@ -1,0 +1,8 @@
+<!--pages/addMoney/addMoney.wxml-->
+<view class="money" hover-class="none" hover-stop-propagation="false">
+    <view class="moneyHint" hover-class="none" hover-stop-propagation="false">充值余额</view>
+    <input class="moneyNumber" type="idcard" focus="true" value="{{addMoneyNumber}}" bindinput="setAddMoneyNumber" maxlength="5" focus="{{focusType}}" />
+    <view class="iconfont icon-renminbi RMB" ></view>
+</view>
+<view class="addMoneyBtn" hover-class="none" hover-stop-propagation="false" bindtap="addMoney">下一步</view>
+<!-- <functional-page-navigator class="addMoneyBtn">下一步</functional-page-navigator> -->

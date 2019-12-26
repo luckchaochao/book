@@ -1,0 +1,7 @@
+<!-- pages/money/money.wxml -->
+<view class="money" hover-class="none" hover-stop-propagation="false">
+    <view class="moneyHint" hover-class="none" hover-stop-propagation="false">我的余额(元)</view>
+    <view class="moneyNumber" hover-class="none" hover-stop-propagation="false">{{userMoney}}</view>
+</view>
+<!-- <view class="addMoneyBtn" hover-class="none" hover-stop-propagation="false"></view> -->
+<navigator class="addMoneyBtn" url="../addMoney/addMoney" hover-class="navigator-hover" open-type="navigate">充值</navigator>

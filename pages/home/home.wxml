@@ -5,14 +5,14 @@
             <image class="userInfoListImg" src="{{userInfo.touxiang}}"></image>
         </view>
         <view class="userInfoListNameBox">
-            <view class="userInfoListName">{{userInfo.name}}</view>
-            <view class="userInfoListCountry">中国 · 安阳</view>
+            <view class="userInfoListName" >{{userInfo.name}}</view>
+            <view class="userInfoListCountry" bindtap="qqq">中国 · 安阳</view>
         </view>
         <view class="userInfoListShare">
             <text class="iconfont icon-fenxiang"></text>
             分享
         </view>
-        <navigator class="iconfont icon-shezhi userInfoListSet" url=""></navigator>
+        <navigator class="iconfont icon-shezhi userInfoListSet" url="../setBtn/setBtn"></navigator>
     </view>
 
     <view class="userInfoBox">
@@ -42,7 +42,7 @@
             {{userInfo.id}}
         </view>
     </navigator>
-    <navigator class="userMoney" url="" hover-class="none" open-type="navigate">
+    <navigator class="userMoney" url="../money/money" hover-class="none" open-type="navigate">
         <view class="uesrDataHint">账户余额</view>
         <view class="userMoneyNumber" hover-class="none" hover-stop-propagation="false">
             {{userInfo.moneys}}

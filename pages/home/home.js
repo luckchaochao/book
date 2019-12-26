@@ -13,13 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let tmpThis = this
-    app.login().then(res => {
-      tmpThis.setData({
-        userInfo: app.globalData.userInfo[0]
-      })
-      console.log(tmpThis.data.userInfo)
-    });
+
   },
 
   /**
@@ -33,7 +27,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let tmpThis = this
+    app.login().then(res => {
+      tmpThis.setData({
+        userInfo: app.globalData.userInfo[0]
+      })
+    });
   },
 
   /**

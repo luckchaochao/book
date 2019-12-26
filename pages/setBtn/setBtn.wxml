@@ -1,0 +1,31 @@
+<!-- pages/setBtn/setBtn.wxml -->
+<!-- <text>pages/setBtn/setBtn.wxml</text> -->
+<view class="uesrDataBox" hover-class="none" hover-stop-propagation="false">
+    <navigator class="uesrData" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">查看账户</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userMessage" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">个人资料</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userComment" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">消息提醒</view>
+        <switch checked="{{alertType}}" bindchange="setAlertType" data-alertType="alertType" color="#FB6894"/>
+    </navigator>
+    <navigator class="userMoney" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">清理缓存</view>
+        <view class="userMoneyNumber" hover-class="none" hover-stop-propagation="false">
+            {{huancun}}
+        </view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userShopping" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">帮助中心</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userShopping" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">关于我们</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+</view>

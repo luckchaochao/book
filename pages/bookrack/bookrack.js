@@ -23,12 +23,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // let tmpThis = this
     this.setData({
-      bookListDoing: app.globalData.bookList.slice(0,3),
-      bookList: app.globalData.bookList.slice(0,6)
+      bookListDoing: app.globalData.bookList.slice(0, 3),
+      bookList: app.globalData.bookList.slice(0, 6)
     })
-    // console.log(app.globalData.bookList)
 
   },
 

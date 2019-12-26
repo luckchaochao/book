@@ -1,13 +1,21 @@
 {
   "pages": [
+		"pages/index/index",
     
-
-
     "pages/home/home",
+
+		"pages/addMoney/addMoney",
+		
+
+		"pages/money/money",
+		
+
+
+    "pages/setBtn/setBtn",
+
 
     "pages/explore/explore",
 
-		"pages/index/index",
 		
 		"Component/bookList/bookList",
 

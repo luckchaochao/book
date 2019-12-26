@@ -1,0 +1,32 @@
+/* pages/money/money.wxss */
+
+.money {
+    margin: 0 50rpx;
+    padding: 57rpx 48rpx;
+    background-color: #2B323B;
+    border-radius: 30rpx;
+    margin-top: 50rpx;
+}
+
+.moneyHint {
+    font-size: 48rpx;
+    color: #75808D;
+}
+.moneyNumber{
+    font-size: 128rpx;
+    color: #ffffff;
+    margin-top: 46rpx;
+    line-height: 110rpx;
+}
+
+.addMoneyBtn{
+    width: 750rpx;
+    height: 142rpx;
+    text-align: center;
+    line-height: 142rpx;
+    font-size: 44rpx;
+    color: #ffffff;
+    background-color: #FB6894;
+    position: absolute;
+    bottom: 0;
+}
