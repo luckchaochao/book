@@ -1,2 +1,60 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- pages/home/home.wxml -->
+<view class="userInfo">
+    <view class="userInfoList">
+        <view>
+            <image class="userInfoListImg" src="{{userInfo.touxiang}}"></image>
+        </view>
+        <view class="userInfoListNameBox">
+            <view class="userInfoListName">{{userInfo.name}}</view>
+            <view class="userInfoListCountry">中国 · 安阳</view>
+        </view>
+        <view class="userInfoListShare">
+            <text class="iconfont icon-fenxiang"></text>
+            分享
+        </view>
+        <navigator class="iconfont icon-shezhi userInfoListSet" url=""></navigator>
+    </view>
+
+    <view class="userInfoBox">
+        <view class="userInfoBoxGuanz">
+            <view class="userInfoBoxNumber">{{userInfo.guanz}}</view>
+            <view class="userInfoBoxHint">关注</view>
+        </view>
+        <view class="userInfoBoxFens">
+            <view class="userInfoBoxNumber">{{userInfo.fens}}</view>
+            <view class="userInfoBoxHint">粉丝</view>
+        </view>
+        <view class="userInfoBoxLikes">
+            <view class="userInfoBoxNumber">{{userInfo.likes}}</view>
+            <view class="userInfoBoxHint">喜欢</view>
+        </view>
+    </view>
+</view>
+<view class="uesrDataBox" hover-class="none" hover-stop-propagation="false">
+    <navigator class="uesrData" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">个人信息</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userMessage" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">我的消息</view>
+        <view wx:if="{{userInfo.id.length==0}}" class="iconfont icon-icon_arrow_right"></view>
+        <view wx:if="{{userInfo.id.length!=0}}" class="userMessageShowBox" hover-class="none" hover-stop-propagation="false">
+            {{userInfo.id}}
+        </view>
+    </navigator>
+    <navigator class="userMoney" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">账户余额</view>
+        <view class="userMoneyNumber" hover-class="none" hover-stop-propagation="false">
+            {{userInfo.moneys}}
+        </view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userComment" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">我的评论</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+    <navigator class="userShopping" url="" hover-class="none" open-type="navigate">
+        <view class="uesrDataHint">购物车</view>
+        <view class="iconfont icon-icon_arrow_right"></view>
+    </navigator>
+</view>

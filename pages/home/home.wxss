@@ -1,1 +1,98 @@
-/* pages/home/home.wxss */
+.userInfo {
+  margin: 0 50rpx;
+}
+.userInfo .userInfoList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.userInfo .userInfoList .userInfoListImg {
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+}
+.userInfo .userInfoList .userInfoListNameBox {
+  align-self: flex-start;
+  margin-top: 30rpx;
+  margin-left: -40rpx;
+}
+.userInfo .userInfoList .userInfoListNameBox .userInfoListName {
+  font-size: 44rpx;
+  color: #fff;
+  font-family: heiti;
+}
+.userInfo .userInfoList .userInfoListNameBox .userInfoListCountry {
+  font-size: 28rpx;
+  color: #B5B7C5;
+  font-family: Regular;
+}
+.userInfo .userInfoList .userInfoListShare {
+  align-self: flex-end;
+  width: 180rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #71768C;
+  border: 1rpx solid #545D66;
+  border-radius: 10rpx;
+}
+.userInfo .userInfoList .userInfoListSet {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 30rpx;
+}
+.userInfo .userInfoBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #2B323B;
+  border-radius: 20rpx;
+  margin-top: 50rpx;
+  padding: 20rpx 0;
+}
+.userInfo .userInfoBox > view {
+  flex-grow: 1;
+}
+.userInfo .userInfoBox > view .userInfoBoxNumber {
+  font-size: 36rpx;
+  color: #fff;
+}
+.userInfo .userInfoBox > view .userInfoBoxHint {
+  font-family: Regular;
+  color: #75808D;
+  font-size: 24rpx;
+}
+.userInfo .userInfoBox .userInfoBoxGuanz,
+.userInfo .userInfoBox .userInfoBoxFens {
+  border-right: 1rpx solid #363C45;
+}
+.uesrDataBox {
+  margin-left: 50rpx;
+  font-size: 36rpx;
+  color: #DCDEEA;
+  font-family: Regular;
+  line-height: 48rpx;
+}
+.uesrDataBox > navigator {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1rpx solid #333C47;
+  padding: 53rpx 50rpx 53rpx 0;
+}
+.uesrDataBox > navigator .userMoneyNumber {
+  color: #FB6894;
+  margin-right: 10rpx;
+}
+.uesrDataBox > navigator .uesrDataHint {
+  margin-right: auto;
+}
+.uesrDataBox .userMessageShowBox {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #FB6894;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50rpx;
+}

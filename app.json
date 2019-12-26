@@ -3,6 +3,7 @@
     
 
 
+    "pages/home/home",
 
     "pages/explore/explore",
 
@@ -13,11 +14,7 @@
 		"Component/slideLR/slideLR",
 		
 
-    "pages/bookrack/bookrack",
-    "pages/home/home",
-
-
-    "pages/logs/logs"
+    "pages/bookrack/bookrack"
 
 
   ],
