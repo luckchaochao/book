@@ -1,6 +1,13 @@
 {
   "pages": [
-		"pages/index/index",
+    "pages/index/index",
+		
+		
+		"pages/author/author",
+		
+    
+		"pages/classify/classify",
+
     
     "pages/home/home",
 

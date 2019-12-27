@@ -1,0 +1,12 @@
+<!-- pages/classify/classify.wxml -->
+<view class="bookLineWrap" wx:for="{{bookList}}" wx:key="index">
+    <navigator url="">
+        <view class="bookLineBox">
+            <image class="bookLineImg" src="{{item.touxiang}}"></image>
+            <text class="bookLineBookMenu iconfont icon-caidan" selectable="false" space="false" decode="false"></text>
+            <text class="bookLineBookName">{{item.bookname}}</text>
+            <text class="bookLineBookAuthor">作者: {{item.writername}}</text>
+            <text class="bookLineBookAbout">{{item.about}}</text>
+        </view>
+    </navigator>
+</view>

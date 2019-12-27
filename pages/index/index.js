@@ -10,12 +10,12 @@ Page({
     classifyNav: {
       title: "分类排行",
       navName: "查看全部 >",
-      navUrl: "/pages/logs/logs?title=navigate"
+      navUrl: "/pages/classify/classify"
     },
     authorNav: {
       title: "作者排行",
       navName: "查看全部 >",
-      navUrl: "/pages/logs/logs?title=navigate"
+      navUrl: "/pages/author/author"
     },
     bookListNav: {
       title: "新发布",
