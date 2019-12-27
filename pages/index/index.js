@@ -10,7 +10,8 @@ Page({
     classifyNav: {
       title: "分类排行",
       navName: "查看全部 >",
-      navUrl: "/pages/classify/classify"
+      typeUrl: "/pages/classify/classify",
+      navUrl:"/pages/allClassify/allClassify"
     },
     authorNav: {
       title: "作者排行",

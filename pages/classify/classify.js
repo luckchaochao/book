@@ -14,10 +14,11 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
-		let tmpThis = this
 		wx.setNavigationBarTitle({
 			title: options.classify
 		})
+		let tmpThis = this
+
 		app.getBookList().then(res => {
 			let tmp = []
 			for (const item of app.globalData.bookList) {

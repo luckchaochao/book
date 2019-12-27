@@ -1,0 +1,13 @@
+<!-- <text bindtap="qqq">pages/allClassify/allClassify.wxml</text> -->
+<view class="seekBox">
+    <input class="seekData" type="text" placeholder="搜索..." />
+    <text class="iconfont icon-49 seekIcon" selectable="false" space="false" decode="false"></text>
+</view>
+<scroll-view class="classifyBox" scroll-x="true" enable-flex="true">
+    <view wx:for="{{classify}}" class="classify {{item.type == tmpindex ? 'classifyDoing' : ''}}" data-type="{{item.type}}" wx:key="index" bindtap="changestatus" hover-class="none" hover-stop-propagation="false">
+        {{item.type}}
+    </view>
+    <!-- <view class="classifyBoxBtm" ></view> -->
+</scroll-view>
+<bookList class="bookList" bookList="{{newBookList}}" bookListNav="{{newBook}}"></bookList>
+<bookList class="bookList" bookList="{{hotBookList}}" bookListNav="{{hotBook}}"></bookList>

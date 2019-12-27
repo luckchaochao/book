@@ -8,7 +8,7 @@
   <scroll-view class="slideLRLoopBox clr" scroll-x="true">
     <view class="slideLRLoopWrap" wx:for="{{slideLRdata}}" wx:key="index">
 
-      <navigator url="{{slideLRNav.navUrl}}?classify={{item.type}}&作者={{item.name}}" hover-class="navigator-hover">
+      <navigator url="{{slideLRNav.typeUrl}}?classify={{item.type}}&作者={{item.name}}" hover-class="navigator-hover">
         <view class="slideLRLoop clr">
           <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
           <text wx:if="{{item.type}}" class="slideLRLoopText">{{item.type}}</text>
