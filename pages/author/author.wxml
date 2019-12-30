@@ -1,2 +1,83 @@
-<!--pages/author/author.wxml-->
-<text>pages/author/author.wxml</text>
+<!-- pages/author/author.wxml -->
+<!-- <text>pages/author/author.wxml</text> -->
+<view class="authorInfoBox" hover-class="none" hover-stop-propagation="false">
+    <view class="authorImgBox" hover-class="none" hover-stop-propagation="false">
+        <image class="authorImg" src="{{authorInfo.touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="authorinfo" hover-class="none" hover-stop-propagation="false">
+        <view class="authorName" hover-class="none" hover-stop-propagation="false">
+            {{authorInfo.name}}
+        </view>
+        <view class="authorSite" hover-class="none" hover-stop-propagation="false">
+            {{authorInfo.country}} · {{authorInfo.city}}
+        </view>
+        <view class="authorSet" hover-class="none" hover-stop-propagation="false">
+            <view class="authorShare iconfont icon-fenxiang" hover-class="none" hover-stop-propagation="false">
+                分享
+            </view>
+            <view class="authorAddLike iconfont icon-add" hover-class="none" hover-stop-propagation="false">
+                关注
+            </view>
+        </view>
+    </view>
+</view>
+<view class="userInfoBox">
+    <view class="userInfoBoxGuanz">
+        <view class="userInfoBoxNumber">{{authorInfo.guanz}}</view>
+        <view class="userInfoBoxHint">关注</view>
+    </view>
+    <view class="userInfoBoxFens">
+        <view class="userInfoBoxNumber">{{authorInfo.fens}}</view>
+        <view class="userInfoBoxHint">粉丝</view>
+    </view>
+    <view class="userInfoBoxLikes">
+        <view class="userInfoBoxNumber">{{authorInfo.likes}}</view>
+        <view class="userInfoBoxHint">喜欢</view>
+    </view>
+</view>
+<view class="bookListTitleBox" hover-class="none" hover-stop-propagation="false">
+    <view class="bookListTitle" hover-class="none" hover-stop-propagation="false">代表作</view>
+    <view class="bookListNumber" hover-class="none" hover-stop-propagation="false">
+        总共{{bookList.length}}本书
+    </view>
+</view>
+
+<block wx:for="{{bookList}}" wx:key="index">
+    <view class="bookListBox" hover-class="none" hover-stop-propagation="false">
+        <view class="bookListImg" hover-class="none" hover-stop-propagation="false">
+            <image class="" src="{{item.touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <view class="bookListContent" hover-class="none" hover-stop-propagation="false">
+            <view class="bookListBookNane" hover-class="none" hover-stop-propagation="false">
+                {{item.bookname}}
+            </view>
+            <view class="bookGrade" hover-class="none" hover-stop-propagation="false">
+                <view class="starBox" hover-class="none" hover-stop-propagation="false">
+                    <view class="BGstar" hover-class="none" hover-stop-propagation="false">
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                    </view>
+                    <view class="showStarBox" hover-class="none" style="width: {{book.star*35}}rpx" hover-stop-propagation="false">
+                        <!-- <view class="showStar"  hover-class="none" hover-stop-propagation="false"> -->
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <view class="iconfont icon-icon xingxing"></view>
+                        <!-- </view> -->
+                    </view>
+                </view>
+                <view class="bookGradeNumber" hover-class="none" hover-stop-propagation="false">
+                    {{item.star}}
+                </view>
+            </view>
+            <view class="bookListAbout" hover-class="none" hover-stop-propagation="false">{{item.about}}</view>
+            <view class="bookListLookNumber" hover-class="none" hover-stop-propagation="false">
+                {{item.id}}人阅读
+            </view>
+        </view>
+    </view>
+</block>

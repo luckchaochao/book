@@ -1,6 +1,4 @@
-// pages/author/author.js
-var app = getApp();
-
+// pages/allAuthor/allAuthor.js
 Page({
 
 	/**
@@ -14,32 +12,7 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
-		// console.log(options.author)
-		let tmpThis = this
 
-		app.getAuthor().then(res => {
-			for (const i of app.globalData.author) {
-				if (i.name == options.author) {
-					tmpThis.setData({
-						authorInfo: i
-					})
-				}
-			}
-			// console.log(tmpThis.data.authorInfo)
-		});
-		app.getBookList().then(res => {
-			let tmpArr = []
-			for (const i of app.globalData.bookList) {
-				if (i.writername == options.author) {
-					tmpArr.push(i)
-				}
-			}
-			tmpThis.setData({
-				bookList: tmpArr
-			})
-			// console.log(tmpThis.data.bookList)
-
-		});
 	},
 
 	/**

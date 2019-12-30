@@ -16,11 +16,11 @@ Page({
 	 */
 	onLoad: function (options) {
 		// console.log(options.bookName)
-		options = "人类简史"
+		// options = "人类简史"
 		let tmpThis = this
 		app.getBookList().then(res => {
 			for (const item of res) {
-				if (item.bookname == options) {
+				if (item.bookname == options.bookName) {
 					tmpThis.setData({
 						book: item
 					})

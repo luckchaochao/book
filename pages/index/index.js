@@ -16,7 +16,8 @@ Page({
     authorNav: {
       title: "作者排行",
       navName: "查看全部 >",
-      navUrl: "/pages/author/author"
+      typeUrl: "/pages/author/author",
+      navUrl:"/pages/allAuthor/allAuthor"
     },
     bookListNav: {
       title: "新发布",

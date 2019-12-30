@@ -1,0 +1,208 @@
+.authorInfoBox {
+    margin: 0 50rpx;
+    display: flex;
+
+    .authorImgBox {
+        width: 240rpx;
+        height: 240rpx;
+        // background-color: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+
+        image {
+            width: 240rpx;
+            height: 240rpx;
+        }
+    }
+
+    .authorinfo {
+        // background-color: #fff;
+        padding-left: 30rpx;
+
+        .authorName {
+            font-size: 44rpx;
+            color: #fff;
+            padding-top: 26rpx;
+        }
+
+        .authorSite {
+            color: #B5B7C5;
+            font-size: 28rpx;
+        }
+
+        .authorSet {
+            display: flex;
+
+            &>view {
+                text-align: center;
+                width: 180rpx;
+                height: 64rpx;
+                line-height: 64rpx;
+                margin-top: 50rpx;
+                border: transparent solid 1rpx;
+                border-radius: 10rpx;
+                margin-right: 20rpx;
+            }
+
+            .authorShare {
+                border: 1rpx solid #545D66;
+                color: #9497AB;
+            }
+
+            .authorAddLike {
+                color: #fff;
+                background-color: #478CE0;
+                border: 1rpx solid #478CE0;
+            }
+        }
+
+
+    }
+
+}
+
+.userInfoBox {
+    margin: 0 50rpx;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #2B323B;
+    border-radius: 20rpx;
+    margin-top: 50rpx;
+    padding: 20rpx 0;
+
+    &>view {
+        flex-grow: 1;
+
+        .userInfoBoxNumber {
+            font-size: 36rpx;
+            color: #fff;
+        }
+
+        .userInfoBoxHint {
+            font-family: Regular;
+            color: #75808D;
+            font-size: 24rpx;
+        }
+    }
+
+    .userInfoBoxGuanz,
+    .userInfoBoxFens {
+        border-right: 1rpx solid #363C45;
+    }
+
+}
+
+.bookListTitleBox {
+
+    margin: 60rpx 50rpx;
+    display: flex;
+    justify-content: space-between;
+
+    // padding: 50rpx;
+    .bookListTitle {
+        color: #fff;
+        font-size: 36rpx;
+    }
+
+    .bookListNumber {
+        color: #478CE0;
+        font-size: 24rpx;
+    }
+}
+
+.bookListBox {
+    .bookGrade {
+        display: flex;
+        // margin-top: 30rpx;
+
+        .starBox {
+            background-color: #00f;
+            // width: 146rpx;
+            height: 34rpx;
+            position: relative;
+            margin-right: 20rpx;
+
+            .BGstar,
+            .showStarBox {
+                position: absolute;
+                left: 0;
+                top: 0;
+                white-space: nowrap;
+
+                &>.iconfont {
+                    display: inline-block;
+                    font-size: 32rpx;
+                    width: 36rpx;
+
+                }
+
+            }
+
+            .BGstar {
+                color: #71768C;
+            }
+
+            .showStarBox {
+                color: #FB6894;
+                // color: #71768C;
+
+
+                overflow: hidden;
+            }
+
+        }
+
+        .bookGradeNumber {
+            font-size: 40rpx;
+            color: #FFCE44;
+            line-height: 44rpx;
+            margin-left: 160rpx;
+        }
+
+    }
+}
+
+.bookListBox {
+    display: flex;
+    margin: 50rpx 50rpx;
+    border-bottom: 1rpx solid #2B323B;
+    padding-bottom: 40rpx;
+
+    .bookListImg {
+        width: 170rpx;
+        height: 250rpx;
+        border-radius: 20rpx;
+        background-color: #fff;
+
+        image {
+            width: 170rpx;
+            height: 250rpx;
+        }
+    }
+    .bookListContent{
+        padding-left: 30rpx;
+        .bookListBookNane{
+            font-size: 36rpx;
+            color: #fff;
+            margin-top: 20rpx;
+        }
+    }
+
+    .bookListAbout{
+        color: #999FB0;
+        font-size: 24rpx;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp:2;
+        -webkit-box-orient:vertical;
+    }
+    .bookListLookNumber{
+        color: #478CE0;
+        font-size: 24rpx;
+        margin-top: 30rpx;
+    }
+
+
+}

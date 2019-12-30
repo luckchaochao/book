@@ -1,101 +1,97 @@
 <!-- pages/book/book.wxml -->
 <!-- <text>pages/book/book.wxml</text> -->
 <view class="bookInfo" hover-class="none" hover-stop-propagation="false">
-    <view class="" hover-class="none" hover-stop-propagation="false">
-        <image class="bookImg" src="{{book.touxiang}}"></image>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    <image class="bookImg" src="{{book.touxiang}}"></image>
+  </view>
+  <view class="bookInfoBox" hover-class="none" hover-stop-propagation="false">
+    <view class="bookName" hover-class="none" hover-stop-propagation="false">
+      {{book.bookname}}
     </view>
-    <view class="bookInfoBox" hover-class="none" hover-stop-propagation="false">
-        <view class="bookName" hover-class="none" hover-stop-propagation="false">
-            {{book.bookname}}
-        </view>
-        <view class="bookAuthor" hover-class="none" hover-stop-propagation="false">
-            作者: 
-            {{book.writername}}
-        </view>
-        <view class="bookAbout" hover-class="none" hover-stop-propagation="false">
-            {{book.about}}
-        </view>
-        <view class="bookGrade" hover-class="none" hover-stop-propagation="false">
-            <view class="starBox" hover-class="none" hover-stop-propagation="false">
-                <view class="BGstar" hover-class="none" hover-stop-propagation="false">
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                </view>
-                <view class="showStarBox" hover-class="none" style="width: {{book.star*35}}rpx" hover-stop-propagation="false">
-                    <!-- <view class="showStar"  hover-class="none" hover-stop-propagation="false"> -->
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <view class="iconfont icon-icon xingxing"></view>
-                    <!-- </view> -->
-                </view>
-            </view>
-            <view class="bookGradeNumber" hover-class="none" hover-stop-propagation="false">
-                {{book.star}}
-            </view>
-        </view>
+    <view class="bookAuthor" hover-class="none" hover-stop-propagation="false">
+      作者: {{book.writername}}
     </view>
+    <view class="bookAbout" hover-class="none" hover-stop-propagation="false">
+      {{book.about}}
+    </view>
+    <view class="bookGrade" hover-class="none" hover-stop-propagation="false">
+      <view class="starBox" hover-class="none" hover-stop-propagation="false">
+        <view class="BGstar" hover-class="none" hover-stop-propagation="false">
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+        </view>
+        <view class="showStarBox" hover-class="none" style="width: {{book.star*35}}rpx" hover-stop-propagation="false">
+          <!-- <view class="showStar"  hover-class="none" hover-stop-propagation="false"> -->
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <view class="iconfont icon-icon xingxing"></view>
+          <!-- </view> -->
+        </view>
+      </view>
+      <view class="bookGradeNumber" hover-class="none" hover-stop-propagation="false">
+        {{book.star}}
+      </view>
+    </view>
+  </view>
 </view>
 <view class="setBookStatus" hover-class="none" hover-stop-propagation="false">
-    <view class="collectBook" hover-class="none" hover-stop-propagation="false">
-        <text class="iconfont icon-xin icon-xinDoing" hover-class="none" hover-stop-propagation="false"></text>
-        收藏
-    </view>
-    <view bindtap="fxBook" class="shareBook" hover-class="none" hover-stop-propagation="false">
-        <text class="iconfont icon-fenxiang" hover-class="none" hover-stop-propagation="false"></text>
-        分享
-    </view>
-    <view data-hintType="1" bindtap="setHintType" class="addBookrack" hover-class="none" hover-stop-propagation="false">
-        <text class="iconfont icon-shuji" hover-class="none" hover-stop-propagation="false"></text>
-        放入书架
-    </view>
+  <view class="collectBook" hover-class="none" hover-stop-propagation="false">
+    <text class="iconfont icon-xin icon-xinDoing" hover-class="none" hover-stop-propagation="false"></text> 收藏
+  </view>
+  <view bindtap="fxBook" class="shareBook" hover-class="none" hover-stop-propagation="false">
+    <text class="iconfont icon-fenxiang" hover-class="none" hover-stop-propagation="false"></text> 分享
+  </view>
+  <view data-hintType="1" bindtap="setHintType" class="addBookrack" hover-class="none" hover-stop-propagation="false">
+    <text class="iconfont icon-shuji" hover-class="none" hover-stop-propagation="false"></text> 放入书架
+  </view>
 </view>
 <view class="lookBook" hover-class="none" hover-stop-propagation="false">
-    <view class="testLookbook" hover-class="none" hover-stop-propagation="false">试看</view>
-    <view class="buyBook" hover-class="none" hover-stop-propagation="false">购买</view>
+  <view class="testLookbook" hover-class="none" hover-stop-propagation="false">试看</view>
+  <view class="buyBook" hover-class="none" hover-stop-propagation="false">购买</view>
 </view>
 <view class="bookAboutBox" hover-class="none" hover-stop-propagation="false">
-    <view class="bookAboutTitle" hover-class="none" hover-stop-propagation="false">详情</view>
-    <view class="bookAbout" hover-class="none" hover-stop-propagation="false">{{book.about}}</view>
+  <view class="bookAboutTitle" hover-class="none" hover-stop-propagation="false">详情</view>
+  <view class="bookAbout" hover-class="none" hover-stop-propagation="false">{{book.about}}</view>
 </view>
 <view class="bookCatalog" hover-class="none" hover-stop-propagation="false">
-    <view class="" hover-class="none" hover-stop-propagation="false">查看目录</view>
-    <view class="iconfont icon-icon_arrow_right" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="" hover-class="none" hover-stop-propagation="false">查看目录</view>
+  <view class="iconfont icon-icon_arrow_right" hover-class="none" hover-stop-propagation="false"></view>
 </view>
 <view class="bookComment" hover-class="none" hover-stop-propagation="false">
-    <view class="bookCommentTitle" hover-class="none" hover-stop-propagation="false">
-        <view class="" hover-class="none" hover-stop-propagation="false">评论</view>
-        <view class="bookCommentNumber" hover-class="none" hover-stop-propagation="false">
-            xxx条评论
-        </view>
-        <view class="iconfont icon-bianji" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="bookCommentTitle" hover-class="none" hover-stop-propagation="false">
+    <view class="" hover-class="none" hover-stop-propagation="false">评论</view>
+    <view class="bookCommentNumber" hover-class="none" hover-stop-propagation="false">
+      xxx条评论
     </view>
+    <view class="iconfont icon-bianji" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
 </view>
 <view class="bookCommentContentBox" hover-class="none" hover-stop-propagation="false">
-    <view class="imgBox" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="contentBox" hover-class="none" hover-stop-propagation="false">
-        <view class="contentName" hover-class="none" hover-stop-propagation="false">你个废物</view>
-        <view class="content" hover-class="none" hover-stop-propagation="false">
-            评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容
-        </view>
-        <view class="contentInfo" hover-class="none" hover-stop-propagation="false">
-            <view class="contentDate" hover-class="none" hover-stop-propagation="false">12-04 21:20</view>
-            <view class="contentLike iconfont icon-xin" hover-class="none" hover-stop-propagation="false">134</view>
-            <view class="contentComment iconfont icon-xiaoxi" hover-class="none" hover-stop-propagation="false">89</view>
-        </view>
+  <view class="imgBox" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="contentBox" hover-class="none" hover-stop-propagation="false">
+    <view class="contentName" hover-class="none" hover-stop-propagation="false">你个废物</view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+      评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容
     </view>
+    <view class="contentInfo" hover-class="none" hover-stop-propagation="false">
+      <view class="contentDate" hover-class="none" hover-stop-propagation="false">12-04 21:20</view>
+      <view class="contentLike iconfont icon-xin" hover-class="none" hover-stop-propagation="false">134</view>
+      <view class="contentComment iconfont icon-xiaoxi" hover-class="none" hover-stop-propagation="false">89</view>
+    </view>
+  </view>
 </view>
 
-<view class="{{hintType==1?'hintBox':'hintBox hintBoxType'}}"  hover-class="none" hover-stop-propagation="false">
-    <view class="hintImgBox" hover-class="none" hover-stop-propagation="false">
-    <image class="hintImg" src="{{book.touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image> 
-    </view>
-    <view  class="hintText" hover-class="none" hover-stop-propagation="false">
-        已将这本书加入到个人书架
-    </view>
-    <view  data-hintType="0" bindtap="setHintType" class="hintBtn" hover-class="none" hover-stop-propagation="false">好的</view>
+<view class="{{hintType==1?'hintBox':'hintBox hintBoxType'}}" hover-class="none" hover-stop-propagation="false">
+  <view class="hintImgBox" hover-class="none" hover-stop-propagation="false">
+    <image class="hintImg" src="{{book.touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+  </view>
+  <view class="hintText" hover-class="none" hover-stop-propagation="false">
+    已将这本书加入到个人书架
+  </view>
+  <view data-hintType="0" bindtap="setHintType" class="hintBtn" hover-class="none" hover-stop-propagation="false">好的</view>
 </view>
