@@ -1,7 +1,17 @@
 {
   "pages": [
 
+
+
 		"pages/index/index",
+
+		"pages/book/book",
+
+		
+		
+
+		"pages/seek/seek",
+
 		
 
 		"pages/allClassify/allClassify",

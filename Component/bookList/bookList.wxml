@@ -8,7 +8,7 @@
     <view class="bookListBox">
 
         <block wx:for="{{bookList}}" wx:key="index">
-            <navigator class="bookBox clr" url="{{bookListNav.navUrl}}">
+            <navigator class="bookBox clr" url="/pages/book/book?bookName={{item.bookname}}">
                 <image class="bookBoxImg" src="{{item.touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
                 <text class="bookBoxName" selectable="false" space="false" decode="false">
                     {{item.bookname}}

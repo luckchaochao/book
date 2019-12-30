@@ -1,0 +1,231 @@
+page {
+  padding-bottom: 200rpx;
+}
+.bookInfo {
+  margin: 0 50rpx;
+  display: flex;
+  border-bottom: 1rpx solid #323744;
+  padding-bottom: 50rpx;
+}
+.bookInfo .bookImg {
+  width: 216rpx;
+  height: 320rpx;
+  border-radius: 10rpx;
+}
+.bookInfo .bookInfoBox {
+  padding-left: 37rpx;
+}
+.bookInfo .bookInfoBox .bookName {
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+  color: #fff;
+}
+.bookInfo .bookInfoBox .bookAuthor {
+  font-size: 30rpx;
+  color: #828D9A;
+  margin-top: 20rpx;
+}
+.bookInfo .bookInfoBox .bookAbout {
+  font-size: 26rpx;
+  color: #828D9A;
+  margin-top: 20rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.bookInfo .bookInfoBox .bookGrade {
+  display: flex;
+  margin-top: 30rpx;
+}
+.bookInfo .bookInfoBox .bookGrade .starBox {
+  background-color: #00f;
+  height: 34rpx;
+  position: relative;
+  margin-right: 20rpx;
+}
+.bookInfo .bookInfoBox .bookGrade .starBox .BGstar,
+.bookInfo .bookInfoBox .bookGrade .starBox .showStarBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+}
+.bookInfo .bookInfoBox .bookGrade .starBox .BGstar > .iconfont,
+.bookInfo .bookInfoBox .bookGrade .starBox .showStarBox > .iconfont {
+  display: inline-block;
+  font-size: 32rpx;
+  width: 36rpx;
+}
+.bookInfo .bookInfoBox .bookGrade .starBox .BGstar {
+  color: #71768C;
+}
+.bookInfo .bookInfoBox .bookGrade .starBox .showStarBox {
+  color: #FB6894;
+  overflow: hidden;
+}
+.bookInfo .bookInfoBox .bookGrade .bookGradeNumber {
+  font-size: 40rpx;
+  color: #FFCE44;
+  line-height: 44rpx;
+  margin-left: 160rpx;
+}
+.setBookStatus {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0rpx;
+  margin: 0 50rpx;
+  font-size: 30rpx;
+  color: #fff;
+  border-bottom: 1rpx solid #323744;
+}
+.setBookStatus > view .iconfont {
+  padding-right: 10rpx;
+  color: #71768C;
+}
+.setBookStatus > view .icon-xinDoing {
+  color: red;
+}
+.bookAboutBox {
+  margin: 0 50rpx;
+  border-bottom: 1rpx solid #323744;
+}
+.bookAboutBox .bookAboutTitle {
+  font-size: 34rpx;
+  color: #fff;
+  font-family: heiti;
+  font-weight: bold;
+  padding-top: 50rpx;
+}
+.bookAboutBox .bookAbout {
+  font-size: 28rpx;
+  color: #868DAB;
+  padding-top: 30rpx;
+  padding-bottom: 90rpx;
+}
+.bookCatalog {
+  margin: 0 50rpx;
+  padding: 50rpx 0rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #323744;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+.bookCommentTitle {
+  margin: 0 50rpx;
+  padding: 50rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.bookCommentTitle .bookCommentNumber {
+  font-size: 22rpx;
+  color: #007AFF;
+  margin-right: auto;
+  margin-left: 30rpx;
+}
+.bookCommentContentBox {
+  display: flex;
+  margin: 0 50rpx;
+  justify-content: space-between;
+}
+.bookCommentContentBox .imgBox {
+  width: 67rpx;
+  background-color: #fff;
+}
+.bookCommentContentBox .contentBox {
+  width: 550rpx;
+}
+.bookCommentContentBox .contentBox .contentName {
+  font-size: 28rpx;
+  color: #fff;
+}
+.bookCommentContentBox .contentBox .content {
+  font-size: 24rpx;
+  color: #868DAB;
+  margin-top: 30rpx;
+}
+.bookCommentContentBox .contentBox .contentInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #323744;
+  color: #71768C;
+  font-size: 22rpx;
+}
+.bookCommentContentBox .contentBox .contentInfo .contentLike {
+  margin-left: auto;
+  margin-right: 16rpx;
+}
+.lookBook {
+  width: 650rpx;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 32rpx 50rpx;
+  background-color: #373A49;
+  color: #fff;
+}
+.lookBook .testLookbook {
+  width: 216rpx;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  background-color: #9295A9;
+  border-radius: 100rpx;
+}
+.lookBook .buyBook {
+  width: 406rpx;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  background-color: #FB6894;
+  border-radius: 100rpx;
+}
+.hintBox {
+  width: 550rpx;
+  height: 770rpx;
+  border-radius: 50rpx;
+  position: fixed;
+  left: 100rpx;
+  top: 260rpx;
+  background-color: #373A48;
+}
+.hintBox .hintImgBox {
+  margin: 80rpx auto 0 auto;
+  width: 220rpx;
+  height: 320rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 20rpx 20rpx 300rpx #000;
+}
+.hintBox .hintImgBox .hintImg {
+  width: 220rpx;
+  height: 320rpx;
+}
+.hintBox .hintText {
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+  margin: 40rpx 100rpx 0 100rpx;
+}
+.hintBox .hintBtn {
+  width: 422rpx;
+  background-color: #FB6894;
+  color: #fff;
+  margin: 66rpx auto 0 auto;
+  text-align: center;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  padding: 26rpx 0;
+}
+.hintBoxType {
+  display: none;
+}

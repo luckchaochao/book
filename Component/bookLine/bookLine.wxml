@@ -11,7 +11,7 @@
 
 
         <view class="bookLineWrap" wx:for="{{bookLine}}" wx:key="index">
-            <navigator url="{{bookLineNav.navUrl}}">
+            <navigator url="/pages/book/book?bookName={{item.bookname}}">
                 <view class="bookLineBox">
                     <image class="bookLineImg" src="{{item.touxiang}}"></image>
                     <text class="bookLineBookMenu iconfont icon-caidan" selectable="false" space="false" decode="false"></text>

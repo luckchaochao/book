@@ -1,0 +1,8 @@
+<!--pages/seek/seek.wxml-->
+<!-- <text>pages/seek/seek.wxml</text> -->
+<view class="seekBox">
+    <input class="seekData" type="text" placeholder="搜索..." />
+    <text class="iconfont icon-49 seekIcon" selectable="false" space="false" decode="false"></text>
+</view>
+<bookList bookList="{{hotBookList}}" bookListNav="{{hotSeek}}"></bookList>
+
