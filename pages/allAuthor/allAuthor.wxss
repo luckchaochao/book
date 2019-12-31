@@ -1,1 +1,168 @@
-/* pages/allAuthor/allAuthor.wxss */
+.topThreeBox {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #343946;
+  margin: 50rpx 50rpx 0 50rpx;
+  padding-bottom: 100rpx;
+}
+.topThreeBox .topOne {
+  width: 290rpx;
+  height: 300rpx;
+}
+.topThreeBox .topOne .topOneImgBox {
+  margin: 40rpx auto 0 auto;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  background-color: #bbb;
+  position: relative;
+}
+.topThreeBox .topOne .topOneImgBox .topOneImg {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.topThreeBox .topOne .topOneImgBox .topOneIcon {
+  font-size: 100rpx;
+  color: #FDAF01;
+  position: absolute;
+  top: -80rpx;
+  left: 50rpx;
+}
+.topThreeBox .topOne .topOneImgBox .topOneNumber {
+  border: 1rpx solid #fff;
+  border-radius: 50%;
+  width: 34rpx;
+  height: 34rpx;
+  text-align: center;
+  line-height: 34rpx;
+  position: absolute;
+  bottom: -20rpx;
+  left: 82rpx;
+  background-color: #FDAF01;
+  color: #fff;
+  font-size: 24rpx;
+}
+.topThreeBox .topOne .topOneName {
+  text-align: center;
+  color: #FDAF01;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+}
+.topThreeBox .topOne .topOneFens {
+  text-align: center;
+  color: #A2A8BA;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.topThreeBox .topTow {
+  width: 160rpx;
+  height: 300rpx;
+}
+.topThreeBox .topTow .topTowImgBox {
+  margin: 40rpx auto 0 auto;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background-color: #bbb;
+  position: relative;
+}
+.topThreeBox .topTow .topTowImgBox .topTowImg {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.topThreeBox .topTow .topTowImgBox .topTowIcon {
+  font-size: 60rpx;
+  color: #F44380;
+  position: absolute;
+  top: -50rpx;
+  left: 50rpx;
+}
+.topThreeBox .topTow .topTowImgBox .topTowNumber {
+  border: 1rpx solid #fff;
+  border-radius: 50%;
+  width: 34rpx;
+  height: 34rpx;
+  text-align: center;
+  line-height: 34rpx;
+  position: absolute;
+  bottom: -26rpx;
+  left: 60rpx;
+  background-color: #F44380;
+  color: #fff;
+  font-size: 24rpx;
+}
+.topThreeBox .topTow .topTowImgBox .topThreeNumber {
+  background-color: #00A2FF;
+}
+.topThreeBox .topTow .topTowImgBox .topThreeIcon {
+  color: #00A2FF;
+}
+.topThreeBox .topTow .topTowName {
+  text-align: center;
+  color: #F44380;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+}
+.topThreeBox .topTow .topThreeName {
+  color: #00A2FF;
+}
+.topThreeBox .topTow .topTowFens {
+  text-align: center;
+  color: #A2A8BA;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.slideLR {
+  padding: 30rpx 0rpx 0 50rpx;
+  color: #fff;
+  overflow: auto;
+}
+.slideLR .slideLRName {
+  font-size: 36rpx;
+}
+.slideLR .slideLRmenu {
+  float: right;
+  font-size: 26rpx;
+  margin-top: 6rpx;
+  color: #8F95A6;
+}
+.slideLR .slideLRLoopBox {
+  margin-top: 50rpx;
+  border-bottom: 1rpx solid #2F343C;
+  padding-bottom: 50rpx;
+  white-space: nowrap;
+}
+.slideLR .slideLRLoopBox .slideLRLoopWrap {
+  display: inline-block;
+}
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop {
+  width: 150rpx;
+  float: left;
+  padding-right: 40rpx;
+}
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop .slideLRLoopImg {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: 10rpx;
+}
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop .slideLRLoopText {
+  width: 150rpx;
+  float: left;
+  font-size: 26rpx;
+  text-align: center;
+}
+.slideLR .slideLRLoopBox .slideLRLoopWrap .slideLRLoop .addLike {
+  float: left;
+  width: 100rpx;
+  height: 44rpx;
+  margin-left: 25rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  background-color: #478CE0;
+}

@@ -1,4 +1,6 @@
 // pages/allAuthor/allAuthor.js
+var app =  getApp();
+
 Page({
 
 	/**
@@ -12,7 +14,25 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
+		let tmpThis = this
+		// app.getClassify().then(res => {
+		//   tmpThis.setData({
+		// 	classify: app.globalData.classify
+		//   })
+		// });
+		app.getAuthor().then(res => {
+		  tmpThis.setData({
+			authorTop: app.globalData.author.slice(0,3),
+			authorList: app.globalData.author.slice(3)
+		  })
+		  console.log(tmpThis.data.author)
 
+		});
+		// app.getBookList().then(res => {
+		//   tmpThis.setData({
+		// 	bookList: app.globalData.bookList.slice(0, 6)
+		//   })
+		// });
 	},
 
 	/**

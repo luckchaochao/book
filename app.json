@@ -1,7 +1,8 @@
 {
 	"pages": [
-		"pages/allAuthor/allAuthor",
 		"pages/index/index",
+
+		"pages/allAuthor/allAuthor",
 		"pages/book/book",
 		"pages/seek/seek",
 		"pages/allClassify/allClassify",

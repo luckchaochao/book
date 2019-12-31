@@ -1,2 +1,105 @@
-<!--pages/allAuthor/allAuthor.wxml-->
-<text>pages/allAuthor/allAuthor.wxml</text>
+<!-- pages/allAuthor/allAuthor.wxml -->
+<view class="topThreeBox" hover-class="none" hover-stop-propagation="false">
+    <view class="topTow" hover-class="none" hover-stop-propagation="false">
+        <navigator class="" target="" url="/pages/author/author?author={{authorTop[1].name}}" hover-class="navigator-hover" open-type="navigate">
+            <view class="topTowImgBox" hover-class="none" hover-stop-propagation="false">
+                <image class="topTowImg" src="{{authorTop[1].touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                <view class="topTowIcon iconfont icon-huangguan" hover-class="none" hover-stop-propagation="false"></view>
+                <view class="topTowNumber" hover-class="none" hover-stop-propagation="false">
+                    1
+                </view>
+            </view>
+            <view class="topTowName" hover-class="none" hover-stop-propagation="false">
+                {{authorTop[1].name}}
+            </view>
+            <view class="topTowFens" hover-class="none" hover-stop-propagation="false">
+                {{authorTop[1].fens}} 粉丝
+            </view>
+        </navigator>
+    </view>
+    <view class="topOne" hover-class="none" hover-stop-propagation="false">
+        <navigator class="" target="" url="/pages/author/author?author={{authorTop[0].name}}" hover-class="navigator-hover" open-type="navigate">
+            <view class="topOneImgBox" hover-class="none" hover-stop-propagation="false">
+                <image class="topOneImg" src="{{authorTop[0].touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                <view class="topOneIcon iconfont icon-huangguan" hover-class="none" hover-stop-propagation="false"></view>
+                <view class="topOneNumber" hover-class="none" hover-stop-propagation="false">
+                    1
+                </view>
+            </view>
+            <view class="topOneName" hover-class="none" hover-stop-propagation="false">
+                {{authorTop[0].name}}
+            </view>
+            <view class="topOneFens" hover-class="none" hover-stop-propagation="false">
+                {{authorTop[0].fens}} 粉丝
+            </view>
+        </navigator>
+    </view>
+    <view class="topTow" hover-class="none" hover-stop-propagation="false">
+        <navigator class="" target="" url="/pages/author/author?author={{authorTop[2].name}}" hover-class="navigator-hover" open-type="navigate">
+            <view class="topTowImgBox" hover-class="none" hover-stop-propagation="false">
+                <image class="topTowImg" src="{{authorTop[2].touxiang}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                <view class="topTowIcon topThreeIcon iconfont icon-huangguan" hover-class="none" hover-stop-propagation="false"></view>
+                <view class="topTowNumber topThreeNumber" hover-class="none" hover-stop-propagation="false">
+                    1
+                </view>
+            </view>
+            <view class="topTowName topThreeName" hover-class="none" hover-stop-propagation="false">
+                {{authorTop[2].name}}
+            </view>
+            <view class="topTowFens" hover-class="none" hover-stop-propagation="false">
+                {{authorTop[2].fens}} 粉丝
+            </view>
+        </navigator>
+    </view>
+</view>
+<view class="slideLR clr" hover-class="none" hover-stop-propagation="false">
+    <text class="slideLRName">热门作者</text>
+    <navigator class="slideLRmenu " url="" hover-class="navigator-hover">查看全部 ></navigator>
+    <scroll-view class="slideLRLoopBox clr" scroll-x="true">
+        <view class="slideLRLoopWrap" wx:for="{{authorList}}" wx:key="index">
+            <navigator url="/pages/author/author?author={{item.name}}" hover-class="navigator-hover">
+                <view class="slideLRLoop clr">
+                    <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
+                    <view class="slideLRLoopText">{{item.name}}</view>
+                    <view class="addLike iconfont icon-add" hover-class="none" hover-stop-propagation="false">
+                        关注
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </scroll-view>
+</view>
+<view class="slideLR clr" hover-class="none" hover-stop-propagation="false">
+    <text class="slideLRName">新晋作者</text>
+    <navigator class="slideLRmenu " url="" hover-class="navigator-hover">查看全部 ></navigator>
+    <scroll-view class="slideLRLoopBox clr" scroll-x="true">
+        <view class="slideLRLoopWrap" wx:for="{{authorList}}" wx:key="index">
+            <navigator url="/pages/author/author?author={{item.name}}" hover-class="navigator-hover">
+                <view class="slideLRLoop clr">
+                    <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
+                    <view class="slideLRLoopText">{{item.name}}</view>
+                    <view class="addLike iconfont icon-add" hover-class="none" hover-stop-propagation="false">
+                        关注
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </scroll-view>
+</view>
+<view class="slideLR clr" hover-class="none" hover-stop-propagation="false">
+    <text class="slideLRName">其他作者</text>
+    <navigator class="slideLRmenu " url="" hover-class="navigator-hover">查看全部 ></navigator>
+    <scroll-view class="slideLRLoopBox clr" scroll-x="true">
+        <view class="slideLRLoopWrap" wx:for="{{authorList}}" wx:key="index">
+            <navigator url="/pages/author/author?author={{item.name}}" hover-class="navigator-hover">
+                <view class="slideLRLoop clr">
+                    <image class="slideLRLoopImg" src="{{item.touxiang}}"></image>
+                    <view class="slideLRLoopText">{{item.name}}</view>
+                    <view class="addLike iconfont icon-add" hover-class="none" hover-stop-propagation="false">
+                        关注
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </scroll-view>
+</view>
